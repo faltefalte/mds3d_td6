@@ -38,7 +38,11 @@ private:
 
     float _theta;
     bool _rotate;
-    GLuint tex0, tex1, tex2;
+    GLuint tex0, tex1, tex2, tex3, tex4, _texID1;
+
+    GLuint _samplerId;
+    GLenum _minFilter = GL_NEAREST;
+    GLenum _magFilter = GL_NEAREST;
 
     // Mouse parameters for the trackball
     enum TrackMode

@@ -9,6 +9,9 @@ uniform vec3 lightDir;
 uniform sampler2D tex2D0;
 uniform sampler2D tex2D1;
 uniform sampler2D tex2D2;
+uniform sampler2D tex2D3;
+uniform sampler2D tex2D4;
+uniform sampler2D tex2D5;
 
 out vec4 out_color;
 
@@ -35,6 +38,7 @@ void main(void) {
   //out_color = vec4(ambient * v_color + blinn(normalize(v_normal),normalize(v_view), lightDir, v_color, spec_color, shininess),1.0);
   //out_color = vec4(v_tex, 0, 1);
   //out_color = texture(tex2D0, v_tex);
+  /*
   vec4 normalEarth = texture(tex2D0, v_tex);
   vec4 cloud = texture(tex2D1, v_tex);
   vec4 night = texture(tex2D2, v_tex);
@@ -42,4 +46,10 @@ void main(void) {
   //vec4 tmp = mix(normalEarth, cloud, cloud);
   vec4 tmp = mix(mix(normalEarth, cloud, cloud), night, poids);
   out_color = tmp;
+  */
+
+  /** filtrage **/
+  //out_color = texture(tex2D3, v_tex);
+  //out_color = texture(tex2D4, v_tex);
+  out_color = texture(tex2D5, v_tex);
 }
