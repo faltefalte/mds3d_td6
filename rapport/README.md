@@ -49,6 +49,7 @@ J'ai enfin fait les mix avec les résultats précédents et une nouvelle texture
 ![terre jour nuit](images/terre_jour_nuit.png)
 
 3) Filtrage
+-----------
 
 j'ai appliqué un filtre sur le damier avec un nouvel angle de vue et en désactivant la rotation, voici l'angle pris pour la suite : 
 
